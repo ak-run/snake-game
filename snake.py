@@ -9,7 +9,7 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
-TURTLE_SHAPE = "square"
+TURTLE_SHAPE = "circle"
 
 
 class Snake(Turtle):
