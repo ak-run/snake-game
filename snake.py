@@ -9,6 +9,7 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
+TURTLE_SHAPE = "square"
 
 
 class Snake(Turtle):
@@ -24,7 +25,7 @@ class Snake(Turtle):
             self.add_segment(position)
 
     def add_segment(self, position):
-        new_segment = Turtle("square")
+        new_segment = Turtle(TURTLE_SHAPE)
         new_segment.color("white")
         new_segment.penup()
         new_segment.goto(position)

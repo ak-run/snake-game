@@ -9,6 +9,7 @@ screen.setup(width=600, height=600)
 screen.bgcolor("black")  # changing screen background colour
 screen.title("Snake Game")
 screen.tracer(0)  # turning tracer off, only after using update(), the screen refreshes the picture
+screen.addshape("coffee.gif")
 
 snake = Snake()
 food = Food()

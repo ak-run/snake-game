@@ -1,5 +1,7 @@
-from turtle import Turtle
+from turtle import Turtle, Screen
 import random
+
+FOOD_SHAPE = "coffee.gif"
 
 
 class Food(Turtle):
@@ -7,9 +9,8 @@ class Food(Turtle):
         super().__init__()
         self.random_x = None
         self.random_z = None
-        self.shape("turtle")
+        self.shape(FOOD_SHAPE)
         self.shapesize(stretch_len=0.7, stretch_wid=0.7)  # we want the food object to be smaller than a turtle
-        self.color("yellow")
         self.penup()
         self.speed("fastest")
         self.reposition()
